@@ -5,14 +5,14 @@ library(tidyverse)
 library(ggsci)
 library(ggpubr)
 
-# Company-wise placements NMAMIT (2021-22)
+# Company-wise placements NMAMIT  year (2021-22)
 data <- read.csv("cwp.csv")
 ggplot(data, aes(Companies, No.of.Offers)) +
   geom_bar(stat="identity", width=0.8, fill="turquoise3") +
   scale_y_continuous(limits = c(0,270)) +
   theme(axis.text.x=element_text(angle=90, size=6)) +
   labs(title = "Company wise Placements at NMAMIT 2021-22")
-# Load necessary libraries
+# Load necessary libraries ggplot and plotrix
 library(ggplot2)
 library(plotrix)
 
